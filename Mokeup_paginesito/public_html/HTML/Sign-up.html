@@ -1,0 +1,172 @@
+<!DOCTYPE html >
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!--
+PER LA MAPPA SUGLI EVENTI GUARDA HTML-14
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SIGN-UP</title>
+        <!-- Description, Keywords and Author -->
+        <meta name="description" content="Your description">
+        <meta name="keywords" content="Your,Keywords">
+        <meta name="author" content="HimanshuGupta">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Styles -->
+        <!-- Bootstrap CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">	
+        <!-- Animate CSS -->
+        <link href="css/animate.min.css" rel="stylesheet">
+        <!-- Basic stylesheet -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <!-- Font awesome CSS -->
+        <link href="css/font-awesome.min.css" rel="stylesheet">		
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style-color.css" rel="stylesheet">
+        <!-- login style-->
+        <link href="css/Stile_log_in_POP_Up.css" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <!-- header area -->
+        <header>
+            <!-- primary menu -->
+            <nav class="navbar navbar-fixed-top navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- logo area -->
+                        <a class="navbar-brand" href="Home.html">
+                            <!-- logo image -->
+                            <img class="img-responsive" src="img/logo/logo.png" alt="" />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="CatalogoEventi.html">Catalogo Eventi</a></li>
+                            <li><a onclick="document.getElementById('id01').style.display = 'block'" style="width:auto;">Login</a></li>
+                            <li><a href="Sign-up.html">Sign Up</a></li>        
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </header>
+        <!--/ header end -->
+
+        <!-- LOG-IN POPUP -->
+
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Inserisci Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Inserisci Password" name="psw" required>
+
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> RICORDA LE CREDENZIALI
+                    </label>
+
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display = 'none'" class="cancelbtn">Indietro</button>
+                    <span class="psw">Hai dimenticato la <a href="#"> password?</a> 
+                        </br>
+                        Non sei <a href="Sign-up.html"> registrato?</a></span>
+                </div>
+            </form>
+        </div>
+        <!-- LOG-IN POPUP END -->
+
+        <!-- PEZZO DI REGISTRATI -->
+    
+    <div class="promo parallax-one pad">
+        <form action="/action_page.php">
+            <div class="container default-heading section-register">
+                <div class="section-register">
+                    <center><h2>REGISTRATI</h2></center>
+                    <p>Riempi tutti i campi obbligatori per poter procedere con la creazione del tuo account.(Campi obbligatori indicati con *)</p>
+                    <hr>
+
+                    <label for="email"><b>Email(*)</b></label>
+                    <input type="text" placeholder="Inserisci Email" name="email" id="email" required>
+                    
+                    <label for="nome"><b>Nome(*)</b></label>
+                    <input type="text" placeholder="Inserisci Nome" name="nome" id="email" required>
+                    
+                    <label for="cognome"><b>Cognome(*)</b></label>
+                    <input type="text" placeholder="Inserisci Cognome" name="cognome" id="email" required>
+                    
+                    <label for="psw"><b>Password(*)</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+                    <label for="psw-repeat"><b>Ripeti Password(*)</b></label>
+                    <input type="password" placeholder="Ripeti Password" name="psw-repeat" id="psw-repeat" required>
+                    
+                    <label for="CAP"><b>CAP </b></label>
+                    <input type="text" placeholder="Inserisci CAP" name="CAP" id="email" required>
+                    <hr>
+                    <p>Creando un account confermi di accettare i nostri <a href="Termini_&_condizioni.html">Termini e condizioni </a>legati alla Privacy.</p>
+
+                    <button type="submit" class="registerbtn">Registrati</button>
+                </div>
+            </div>
+            <div class="container signin">
+                <p>Hai gi&agrave; un account? <a onclick="document.getElementById('id01').style.display = 'block'" style="width:auto;">Login</a></p>
+            </div> 
+        </form>
+    </div>
+        <!--/ PEZZO DI REGISTRATI FINE -->
+
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <!-- copy right -->
+                <h2><a href="FAQ.html">FAQ</a></h2>
+                <p class="copy-right">&copy; copyright 2021, All rights are reserved.</p>
+            </div>
+        </footer>
+        <!-- footer end -->
+   
+
+
+        <!-- Javascript files -->
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- WayPoints JS -->
+        <script src="js/waypoints.min.js"></script>
+        <!-- Include js plugin -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- One Page Nav -->
+        <script src="js/jquery.nav.js"></script>
+        <!-- Respond JS for IE8 -->
+        <script src="js/respond.min.js"></script>
+        <!-- HTML5 Support for IE -->
+        <script src="js/html5shiv.js"></script>
+        <!-- Custom JS -->
+        <script src="js/custom.js"></script>
+        <!-- LOGIN JS -->
+        <script src="js/login-popup.js"></script>
+    </body>
+</html>

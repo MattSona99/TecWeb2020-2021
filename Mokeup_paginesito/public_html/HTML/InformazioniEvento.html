@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Informazioni_Evento</title>
+        <!-- Description, Keywords and Author -->
+        <meta name="description" content="Your description">
+        <meta name="keywords" content="Your,Keywords">
+        <meta name="author" content="HimanshuGupta">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Styles -->
+        <!-- Bootstrap CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">	
+        <!-- Animate CSS -->
+        <link href="css/animate.min.css" rel="stylesheet">
+        <!-- Basic stylesheet -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <!-- Font awesome CSS -->
+        <link href="css/font-awesome.min.css" rel="stylesheet">		
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style-color.css" rel="stylesheet">
+        <!-- login style-->
+        <link href="css/Stile_log_in_POP_Up.css" rel="stylesheet">
+        
+        <!-- STILE SPLIT SECTION -->
+        <style>
+            /* Pen-specific styles */
+            html, body, section {
+                height: 100%;
+            }
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+                margin: 0 0 0.75rem 0;
+            }
+
+            /* Pattern styles */
+            .container {
+                display: flex;
+            }
+
+            .left-half {
+                background-color: white;
+                flex: 1;
+                padding: 1rem;
+            }
+
+            .right-half {
+                background-color: white;
+                flex: 1;
+                padding: 1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- header area -->
+        <header>
+            <!-- primary menu -->
+            <nav class="navbar navbar-fixed-top navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- logo area -->
+                        <a class="navbar-brand" href="Home.html">
+                            <!-- logo image -->
+                            <img class="img-responsive" src="img/logo/logo.png" alt="" />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="CatalogoEventi.html">Catalogo Eventi</a></li>
+                            <li><a onclick="document.getElementById('id01').style.display = 'block'" style="width:auto;">Login</a></li>
+                            <li><a href="Sign-up.html">Sign Up</a></li>    
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </header>
+        <!-- header end -->
+        <!-- LOG-IN POPUP -->
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Inserisci Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Inserisci Password" name="psw" required>
+
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> RICORDA LE CREDENZIALI
+                    </label>
+
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display = 'none'" class="cancelbtn">Indietro</button>
+                    <!-- FUNZIONE PWD DIMENTICATA -->
+                    <span class="psw">Hai dimenticato la <a href="#"> password?</a> 
+                        </br>
+                        Non sei <a href="Sign-up.html"> registrato?</a></span>
+                </div>
+            </form>
+        </div>
+        <!-- LOG-IN POPUP END -->
+
+        <!-- INFO EVENTO START  -->
+        <div class="promo parallax-one pad">
+            <div class="container default-heading section-register">
+                <div class="event-info">
+                    <h2>INFORMAZIONI EVENTO</h2><br><br>
+
+                    <section class="container">
+                        <div class="left-half">
+                            <article>
+                                <h1>Informazioni Generiche</h1>
+                                <p>L'Evento NOME_EVENTO si svolge presso NOME LUOGO.
+                                    L'Evento NOME_EVENTO si svolge presso NOME LUOGO.
+                                    L'Evento NOME_EVENTO si svolge presso NOME LUOGO.
+                                    L'Evento NOME_EVENTO si svolge presso NOME LUOGO.
+                                    L'Evento NOME_EVENTO si svolge presso NOME LUOGO.
+                                    L'Evento NOME_EVENTO si svolge presso NOME LUOGO.
+                                    L'Evento NOME_EVENTO si svolge presso NOME LUOGO.
+                                    L'Evento NOME_EVENTO si svolge presso NOME LUOGO.
+                                    L'Evento NOME_EVENTO si svolge presso NOME LUOGO.
+                                    L'Evento NOME_EVENTO si svolge presso NOME LUOGO.</p>
+                            </article>
+                        </div>
+                        <div class="right-half">
+                            <article>
+                                <h1>Mappa per aiutarti a raggiungere il luogo senza difficolt&agrave;</h1>
+                                <br><br>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.5774207913805!2d13.167468115779469!3d43.74010475482445!2m3!1f0!2f0!3f0!3m2!1
+                                        i1024!2i768!4f13.1!3m3!1m2!1s0x132d0cd2862cd75d%3A0xc28ecfeab4b673c!2sMamamia!5e0!3m2!1sit!2sit!4v1621271965549!5m2!1sit!2sit"
+                                        width="400" height="200" ></iframe>
+                            </article>
+                        </div>
+                        <br><br>
+                </div>
+                <button onclick="COMPRA_BIGLIETTO()" class="btn btn-lg btn-theme" data-toggle="modal" >Compra Biglietto</button>
+            </div>
+        </div>
+        <!-- INFORMAZIONI EVENTI END -->       
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container">
+                <!-- copy right -->
+                <h2><a href="FAQ.html">FAQ</a></h2>
+                <p class="copy-right">&copy; copyright 2021, All rights are reserved.</p>
+            </div>
+        </footer>
+        <!-- FOOTER END -->
+
+        <!-- Javascript files -->
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- WayPoints JS -->
+        <script src="js/waypoints.min.js"></script>
+        <!-- Include js plugin -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- One Page Nav -->
+        <script src="js/jquery.nav.js"></script>
+        <!-- Respond JS for IE8 -->
+        <script src="js/respond.min.js"></script>
+        <!-- HTML5 Support for IE -->
+        <script src="js/html5shiv.js"></script>
+        <!-- Custom JS -->
+        <script src="js/custom.js"></script>
+        <!-- LOGIN JS -->
+        <script src="js/login-popup.js"></script>
+
+    </body>
+</html>

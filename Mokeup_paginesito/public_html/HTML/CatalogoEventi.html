@@ -7,7 +7,7 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="utf-8">
-        <title>PierguTickets</title>
+        <title>CatalogoEventi</title>
         <!-- Description, Keywords and Author -->
         <meta name="description" content="Your description">
         <meta name="keywords" content="Your,Keywords">
@@ -27,11 +27,11 @@ and open the template in the editor.
         <!-- Custom CSS -->
         <link href="css/style.css" rel="stylesheet">
         <link href="css/style-color.css" rel="stylesheet">
+        <!-- login style-->
+        <link href="css/Stile_log_in_POP_Up.css" rel="stylesheet">
 
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="img/logo/favicon.ico">
     </head>
-<body>
+    <body>
         <div class="wrapper" id="home">
             <!-- header area -->
             <header>
@@ -56,18 +56,45 @@ and open the template in the editor.
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right">
-                                  <li><a href="CatalogoEventi.html">Catalogo Eventi</a></li>
-                                <li><a href="Ricerca.html">Ricerca</a></li>
-                                <li><a href="FAQ.html">FAQ</a></li>
-                                <li><a href="Login_Signup.html">Login/Sign Up</a></li>
+                                <li><a href="CatalogoEventi.html">Catalogo Eventi</a></li>
+                                <li><a onclick="document.getElementById('id01').style.display = 'block'" style="width:auto;">Login</a></li>
+                                <li><a href="Sign-up.html">Sign Up</a></li>    
                             </ul>
                         </div><!-- /.navbar-collapse -->
                     </div><!-- /.container-fluid -->
                 </nav>
             </header>
             <!--/ header end -->
-            
-        <div class="events parallax-three pad" id="events">
+
+            <!-- LOG-IN POPUP -->
+            <div id="id01" class="modal">
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Inserisci Username" name="uname" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Inserisci Password" name="psw" required>
+
+                        <button type="submit">Login</button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> RICORDA LE CREDENZIALI
+                        </label>
+
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display = 'none'" class="cancelbtn">Indietro</button>
+                        <span class="psw">Hai dimenticato la <a href="#"> password?</a> 
+                            </br>
+                            Non sei <a href="Sign-up.html"> registrato?</a></span>
+                    </div>
+                </form>
+            </div>
+            <!-- LOG-IN POPUP END -->
+
+            <!-- RICERCA START  -->
+            <div class="events parallax-three pad" id="events">
                 <div class="container">
                     <!-- default heading -->
                     <div class="default-heading-shadow">
@@ -76,6 +103,27 @@ and open the template in the editor.
                     </div>
                     <!-- events element -->
                     <div class="events-element">
+                        <!-- BARRA DI RICERCA -->
+                        <!-- RICERCA -->               
+                        <div class="container">                         
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                                <input type="text" id="barra-ricerca" placeholder="Descrizione">
+                                <input type="text" id="barra-ricerca" placeholder="Mese ed Anno(MM/AA)">
+                                <input type="text" id="barra-ricerca" placeholder="Luogo">
+                                <input type="text" id="barra-ricerca" placeholder="Societa organizzatrice">
+                                <!-- FUNZIONE RICERCA DA IMPLEMENTARE -->
+                                <button >Cerca</button>
+
+                            </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+
+                        <!--/ RICERCA END -->
+
+
+
+                        <!-- CATALOGO EVENTI -->
                         <div class="row">
                             <div class="col-md-6 col-sm-6">
                                 <!-- event item -->
@@ -96,18 +144,17 @@ and open the template in the editor.
                                         <!-- image hover -->
                                         <div class="img-hover">
                                             <!-- hover icon -->
-                                            <a href="#"><i class="fa fa-play-circle"></i></a>
+                                            <a href="InformazioniEvento.html"><i class="fa fa-play-circle"></i></a>
                                         </div>
                                     </div>
                                     <!-- event information -->
                                     <div class="event-info">
                                         <!-- event title -->
-                                        <h3>Sound Of melodi In Instrumesnts</h3>
+                                        <h3>PINGUINI TATTICI NUCLEARI</h3>
                                         <!-- horizontal line --><hr />
                                         <!-- paragraph -->
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, sed doconsect etur eiusmod teme et dolore magna aliqua... <a href="#">more</a></p>
-                                        <!-- buy ticket button link -->
-                                        <a href="CompraBiglietto.html" class="btn btn-lg btn-theme" data-toggle="modal" >Compra Biglietto</a>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, sed doconsect etur eiusmod teme et dolore magna aliqua... </p>
+                                        <a href="InformazioniEvento.html">Scopri di pi&ugrave;...</a>                                      
                                     </div>
                                 </div>
                             </div>
@@ -130,18 +177,17 @@ and open the template in the editor.
                                         <!-- image hover -->
                                         <div class="img-hover">
                                             <!-- hover icon -->
-                                            <a href="#"><i class="fa fa-play-circle"></i></a>
+                                            <a href="InformazioniEvento.html"><i class="fa fa-play-circle"></i></a>
                                         </div>
                                     </div>
                                     <!-- event information -->
                                     <div class="event-info">
                                         <!-- event title -->
-                                        <h3>Rock Music Festival at City Life Mall</h3>
+                                        <h3>GUERRA E PACE</h3>
                                         <!-- horizontal line --><hr />
                                         <!-- paragraph -->
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, sed doconsect etur eiusmod teme et dolore magna aliqua... <a href="#">more</a></p>
-                                        <!-- buy ticket button link -->
-                                        <a href="CompraBiglietto.html" class="btn btn-lg btn-theme" data-toggle="modal" >Compra Biglietto</a>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, sed doconsect etur eiusmod teme et dolore magna aliqua... </p>
+                                        <a href="InformazioniEvento.html">Scopri di pi&ugrave;...</a>
                                     </div>
                                 </div>
                             </div>
@@ -164,19 +210,17 @@ and open the template in the editor.
                                         <!-- image hover -->
                                         <div class="img-hover">
                                             <!-- hover icon -->
-                                            <a href="#"><i class="fa fa-play-circle"></i></a>
+                                            <a href="InformazioniEvento.html"><i class="fa fa-play-circle"></i></a>
                                         </div>
                                     </div>
                                     <!-- event information -->
                                     <div class="event-info">
                                         <!-- event title -->
-                                        <h3>Fashion Show Light At Hollywood</h3>
+                                        <h3>NEGRAMARO</h3>
                                         <!-- horizontal line --><hr />
                                         <!-- paragraph -->
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, sed doconsect etur eiusmod teme et dolore magna aliqua... <a href="#">more</a></p>
-                                        <!-- buy ticket button link -->
-                                       <a href="CompraBiglietto.html" class="btn btn-lg btn-theme" data-toggle="modal" >Compra Biglietto</a>
-                                    </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, sed doconsect etur eiusmod teme et dolore magna aliqua... </p>
+                                        <a href="InformazioniEvento.html">Scopri di pi&ugrave;...</a> </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6">
@@ -198,7 +242,7 @@ and open the template in the editor.
                                         <!-- image hover -->
                                         <div class="img-hover">
                                             <!-- hover icon -->
-                                            <a href="#"><i class="fa fa-play-circle"></i></a>
+                                            <a href="InformazioniEvento.html"><i class="fa fa-play-circle"></i></a>
                                         </div>
                                     </div>
                                     <!-- event information -->
@@ -207,22 +251,50 @@ and open the template in the editor.
                                         <h3>Massimo Pericolo Tour</h3>
                                         <!-- horizontal line --><hr />
                                         <!-- paragraph -->
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, sed doconsect etur eiusmod teme et dolore magna aliqua... <a href="#">more</a></p>
-                                        <!-- buy ticket button link -->
-                                        <a href="CompraBiglietto.html" class="btn btn-lg btn-theme" data-toggle="modal" >Compra Biglietto</a>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, sed doconsect etur eiusmod teme et dolore magna aliqua... </p>
+                                        <a href="InformazioniEvento.html">Scopri di pi&ugrave;...</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
             <!-- events end -->
-            
+
             <!-- Scroll to top -->
             <span class="totop"><a href="#"><i class="fa fa-chevron-up"></i></a></span>
-        
+
+            <!-- footer -->
+            <footer>
+                <div class="container">
+                    <!-- copy right -->
+                    <h2><a href="FAQ.html">FAQ</a></h2>
+                    <p class="copy-right">&copy; copyright 2021, All rights are reserved.</p>
+                </div>
+            </footer>
+
+            <!-- footer end -->
         </div>
-        
+        <!-- Javascript files -->
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- WayPoints JS -->
+        <script src="js/waypoints.min.js"></script>
+        <!-- Include js plugin -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- One Page Nav -->
+        <script src="js/jquery.nav.js"></script>
+        <!-- Respond JS for IE8 -->
+        <script src="js/respond.min.js"></script>
+        <!-- HTML5 Support for IE -->
+        <script src="js/html5shiv.js"></script>
+        <!-- Custom JS -->
+        <script src="js/custom.js"></script>
+        <!-- LOGIN JS -->
+        <script src="js/login-popup.js"></script>
     </body>
 </html>

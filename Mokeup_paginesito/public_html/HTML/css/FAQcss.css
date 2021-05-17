@@ -1,0 +1,221 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14-mag-2021, 20.30.52
+    Author     : STEPO
+*/
+element.style {
+}
+.accordion-item {
+    margin: 8px 0;
+}
+.accordion-container.parbase.section {
+}
+.accordion-container {
+    width: 100%;
+}
+h3.accordion-item-title {
+    margin: 0;
+}
+.accordion-item-title {
+    font-size: 16px;
+    color: #333;
+    line-height: 24px;
+    padding: 5px 0;
+    font-weight: 600;
+    cursor: pointer;
+}
+button.accordion-trigger {
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    color: inherit;
+    cursor: inherit;
+    text-align: inherit;
+    padding: 0;
+    background: 0;
+    border: 0;
+}
+.accordion-icon.opened:before {
+    -webkit-transform: rotate(
+270deg
+);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(
+270deg
+);
+    transition: duration 1s;
+    -webkit-transition-duration: 1s;
+}
+
+.accordion-icon:before {
+    font-family: 'icomoon';
+    color: #1473e6;
+    content: "\e600";
+    transform: rotate(
+180deg
+);
+    display: inline-block;
+    font-size: 12px;
+    font-size: .75rem;
+    position: relative;
+    margin-right: 12px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+body, body *, body *:before, body *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:after, :before, :not(input):not(select) {
+    box-sizing: border-box;
+    border: 0 none;
+}
+:after, :before, :not(input):not(select) {
+    box-sizing: border-box;
+    border: 0 none;
+}
+body, body *, body *:before, body *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+}
+button.accordion-trigger {
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    color: inherit;
+    cursor: inherit;
+    text-align: inherit;
+    padding: 0;
+    background: 0;
+    border: 0;
+}
+button {
+    cursor: pointer;
+}
+user agent stylesheet
+button {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+    cursor: default;
+    font: 400 13.3333px Arial;
+}
+.accordion-item-title {
+    font-size: 16px;
+    color: #333;
+    line-height: 24px;
+    padding: 5px 0;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+body>article h3, body>article div[class^="column-width-"] h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1em;
+    margin: 22px 0 18px 0;
+}
+.spectrum-Heading6, .spectrum-Heading6 em, .spectrum-Heading--subtitle2, .spectrum-Heading--subtitle2 em, h3 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+    text-transform: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.spectrum-Heading6, .spectrum-Heading--subtitle2, h3 {
+    font-style: normal;
+}
+user agent stylesheet
+h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+}
+body, html {
+    font-family: adobe-clean,"HelveticaNeue-light","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    color: #333;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+body {
+    line-height: 1;
+    color: black;
+    background: white;
+}
+.accordion-icon.opened:before {
+    -webkit-transform: rotate(
+270deg
+);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(
+270deg
+);
+    transition: duration 1s;
+    -webkit-transition-duration: 1s;
+}
+.accordion-icon:before {
+    font-family: 'icomoon';
+    color: #1473e6;
+    content: "\e600";
+    transform: rotate(
+180deg
+);
+    display: inline-block;
+    font-size: 12px;
+    font-size: .75rem;
+    position: relative;
+    margin-right: 12px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+body, body *, body *:before, body *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:after, :before, :not(input):not(select) {
+    box-sizing: border-box;
+    border: 0 none;
+}
+body, body *, body *:before, body *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:after, :before, :not(input):not(select) {
+    box-sizing: border-box;
+    border: 0 none;
+}

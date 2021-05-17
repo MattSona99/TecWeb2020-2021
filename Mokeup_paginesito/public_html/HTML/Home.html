@@ -30,9 +30,10 @@ PER LA MAPPA SUGLI EVENTI GUARDA HTML-14
         <!-- Custom CSS -->
         <link href="css/style.css" rel="stylesheet">
         <link href="css/style-color.css" rel="stylesheet">
+        <!-- login style-->
+        <link href="css/Stile_log_in_POP_Up.css" rel="stylesheet">
 
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="img/logo/favicon.ico">
+        
     </head>
     <body>
         <!-- header area -->
@@ -41,7 +42,7 @@ PER LA MAPPA SUGLI EVENTI GUARDA HTML-14
             <nav class="navbar navbar-fixed-top navbar-default">
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
+                       <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
@@ -58,11 +59,9 @@ PER LA MAPPA SUGLI EVENTI GUARDA HTML-14
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-
                             <li><a href="CatalogoEventi.html">Catalogo Eventi</a></li>
-                            <li><a href="Ricerca.html">Ricerca</a></li>
-                            <li><a href="FAQ.html">FAQ</a></li>
-                            <li><a href="Login_Signup.html">Login/Sign Up</a></li>
+                            <li><a onclick="document.getElementById('id01').style.display = 'block'" style="width:auto;">Login</a></li>
+                            <li><a href="Sign-up.html">Sign Up</a></li>        
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
@@ -71,7 +70,35 @@ PER LA MAPPA SUGLI EVENTI GUARDA HTML-14
         <!--/ header end -->
 
         <!--/ home page content-->
+        
+        <!-- LOG-IN POPUP -->
+        
+            <div id="id01" class="modal">
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Inserisci Username" name="uname" required>
 
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Inserisci Password" name="psw" required>
+
+                        <button type="submit">Login</button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> RICORDA LE CREDENZIALI
+                        </label>
+                       
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display = 'none'" class="cancelbtn">Indietro</button>
+                        <span class="psw">Hai dimenticato la <a href="#"> password?</a> 
+                            </br>
+                        Non sei <a href="Sign-up.html"> registrato?</a></span>
+                    </div>
+                </form>
+            </div>
+        <!-- LOG-IN POPUP END -->
+        
         <!-- banner area -->
         <div class="banner">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -116,6 +143,7 @@ PER LA MAPPA SUGLI EVENTI GUARDA HTML-14
         <div class="nav-animate"></div>
 
         <!-- DAL FOGLIO STYLE.CSS GUARDA I VARI PARALLAX PER LO STILE-->
+
         <!-- featured abbum -->
         <div class="featured pad" id="featuredalbum">
             <div class="container">
@@ -135,11 +163,12 @@ PER LA MAPPA SUGLI EVENTI GUARDA HTML-14
                                     <!-- image -->
                                     <img class="img-responsive" src="img/featured/1.jpg" alt="" />
                                     <!-- paragraph -->
-                                    <p>There are many variations of passages available, but the majority have suffered Lorem alteration in some form, by injected look even slightly believable.</p>
+                                    <p>Sei un appassionato di teatro? NOMESITO è il posto giusto per te, vendiamo biglietti per spettacoli di qualunque tipo </p>
                                 </div>
                                 <!-- featured information -->
                                 <div class="featured-item-info">
                                     <!-- featured title -->
+                                    </br>
                                     <h4>SPETTACOLI TEATRALI</h4>
                                     <!-- horizontal line -->
                                 </div>
@@ -153,11 +182,12 @@ PER LA MAPPA SUGLI EVENTI GUARDA HTML-14
                                     <!-- image -->
                                     <img class="img-responsive" src="img/featured/2.jpg" alt="" />
                                     <!-- paragraph -->
-                                    <p>There are many variations of passages available, but the majority have suffered Lorem alteration in some form, by injected look even slightly believable.</p>
+                                    <p>La musica dal vivo non è da meno, qui troverai i biglietti per tutti i conerti dei tuoi artisti preferiti </p>
                                 </div>
                                 <!-- featured information -->
                                 <div class="featured-item-info">
                                     <!-- featured title -->
+                                    </br>
                                     <h4>CONCERTI</h4>
                                     <!-- horizontal line -->
                                 </div>
@@ -171,56 +201,108 @@ PER LA MAPPA SUGLI EVENTI GUARDA HTML-14
                                     <!-- image -->
                                     <img class="img-responsive" src="img/featured/3.jpg" alt="" />
                                     <!-- paragraph -->
-                                    <p>There are many variations of passages available, but the majority have suffered Lorem alteration in some form, by injected look even slightly believable.</p>
+                                    <p>Troverai anche una grande vastita&grave; di eventi legati allo sport, calcio pallavolo ecc..</p>
                                 </div>
                                 <!-- featured information -->
                                 <div class="featured-item-info">
                                     <!-- featured title -->
+                                    </br>
                                     <h4>EVENTI SPORTIVI</h4>                  
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    </br>
+                    <center> <a href="CatalogoEventi.html" class="btn btn-lg btn-theme">Tutti gli eventi</a></center>
+                </div>
+            </div>
+        </div>
+        <!-- features end -->
+        <!-- promo -->
+        <div class="promo parallax-one pad">
+            <div class="container">
+                <!-- promo element -->
+                <div class="promo-element ">
+                    <!-- heading -->
+                    <h3>Vuoi partecipare a qualche evento?</h3>
+                    <!-- paragraph -->
+                    <p>Ricordati che puoi <strong>acquistare</strong> biglietti solamente se sei gia un cliente <strong>registrato!</strong></p>                   <!-- link -->
+                    </br></br>
+                    <p>Nel caso in cui fossi registrato</p>
+                    <center><a class="btn btn-lg btn-theme" onclick="document.getElementById('id01').style.display = 'block'" style="width:auto;">Login</a></center>
+                    </br>
+                    <p>Oppure </p>
+                    <center><a class="btn btn-lg btn-theme" href="Sign-up.html">Registrati</a></center>
+                </div>
+            </div>
+        </div>
+        <!--/ promo end -->
+        
+        
+
+        <!-- work with us -->
+        <div class="work-with-us pad" id="joinus">
+            <div class="container">
+                <!-- default heading -->
+                <div class="default-heading">
+                    <!-- heading -->
+                    <h2>Vuoi lavorare con noi?</h2>
+                </div>
+                <!-- why work with us content -->
+                <div class="why-content">
+                    <!-- paragraph -->
+                    <p class="why-message">It would be a great pleasure to have you in our team, follow these steps to join us.</p>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <!-- why work with us item -->
+                            <div class="why-item  delay-one">
+                                <span class="why-number">1</span>
+                                <!-- paragraph -->
+                                <p>Sed ut perspi ciatis unde omnis iste natus error sit vol uptatem accus antium totam rem aperiam, eaque ipsa quae ab illo inventore veritatisnatus.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <!-- why work with us item -->
+                            <div class="why-item  delay-two">
+                                <span class="why-number">2</span>
+                                <!-- paragraph -->
+                                <p>Sed ut perspi ciatis unde omnis iste natus error sit vol uptatem accu santium totam rem aperiam, eaque ipsa quae ab illo inventore veritatisnatus.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <!-- why work with us item -->
+                            <div class="why-item  delay-three">
+                                <span class="why-number">3</span>
+                                <!-- paragraph -->
+                                <p>Sed ut perspi ciatis unde omnis iste natus error sit vol uptatem accus antium totam rem aperiam, eaque ipsa quae ab illo inventore veritatisnatus.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <!-- why work with us item -->
+                            <div class="why-item  delay-four">
+                                <span class="why-number">4</span>
+                                <!-- paragraph -->
+                                <p>Sed ut perspi ciatis unde omnis iste natus error sit vol uptatem accus antium totam rem aperiam, eaque ipsa quae ab illo inventore veritatisnatus.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- features end -->
-
-        <div class="parallax-one" id="HomePage">
-            <div class="container">
-                <!-- default heading -->
-                <div class="default-heading-shadow">
-                    </br></br>  </br></br> </br></br>                                            
-                    <h2><a>DEVELOPER TOUGHT PROCESS</a></h2>
-                </div>
-                <!-- PEZZETTO HP -->
-                <!--GUARDA CTA NEL FILE .CSS -->
-                <!-- call to action -->
-			<div class="cta parallax-one pad">
-				<div class="container">
-					<!-- cta element -->
-					<div class="cta-element ">
-						<div class="row">
-							<div class="col-md-9 col-sm-8">
-								<!-- heading -->
-								<h3>Melodi, A Fully Rock Album Pro</h3>
-								<!-- paragraph -->
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim sectetur adipiscing elit, sed do eiusmod tempoad minim veniam consequat.</p>
-							</div>
-							<div class="col-md-3 col-sm-4">
-								
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--/ cta end -->
-			
+        <!--/ end work with us -->
+        
         <!-- Scroll to top -->
         <span class="totop"><a href="#"><i class="fa fa-chevron-up"></i></a></span>
 
-
-
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <!-- copy right -->
+                <h2><a href="FAQ.html">FAQ</a></h2>
+                <p class="copy-right">&copy; copyright 2021, All rights are reserved.</p>
+            </div>
+        </footer>
+        <!-- footer end -->
 
         <!-- Javascript files -->
         <!-- jQuery -->
@@ -239,5 +321,7 @@ PER LA MAPPA SUGLI EVENTI GUARDA HTML-14
         <script src="js/html5shiv.js"></script>
         <!-- Custom JS -->
         <script src="js/custom.js"></script>
+         <!-- LOGIN JS -->
+        <script src="js/login-popup.js"></script>
     </body>
 </html>

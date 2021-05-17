@@ -79,7 +79,7 @@ hr{
 /* navigation */
 
 .navbar {
-	margin-top: 40px;
+	margin-top: 0px;
 	border: 0;
 	border-radius:0;
 	box-shadow: none;
@@ -501,6 +501,43 @@ footer {
 	height:15px;
 	margin: 5px auto;
 }	
+
+/* footer */
+footer {
+	padding-top: 50px;
+	padding-bottom: 30px;
+	background: #252c37;
+	text-align: center;
+}
+
+footer .social a {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	margin: 0 7px;
+	margin-bottom: 30px;
+	color: #fff;
+	font-size: 32px;
+	border: 1px solid transparent;
+	border-radius: 80px;
+	-webkit-transition: all 0.25s linear;
+	-moz-transition: all 0.25s linear;
+	-ms-transition: all 0.25s linear;
+	-o-transition: all 0.25s linear;
+	transition: all 0.25s linear;
+}
+
+footer .copy-right {
+	color: #fff;
+	font-size: 12px;
+}
+
+/*  REGISTRAZIONE PAGINA  */
+section-register
+{
+   
+}
 
 
 /*
